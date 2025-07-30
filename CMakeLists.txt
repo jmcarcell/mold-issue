@@ -11,3 +11,8 @@ add_executable(ClusterShapes
 target_link_libraries(ClusterShapes
   PRIVATE GSL::gsl
 )
+
+add_executable(main
+        main.cpp)
+target_link_libraries(main
+        ClusterShapes)
